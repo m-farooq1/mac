@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PhotoesTableViewController prepareForSegue:sender:]:PhotoesTableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[segue identifier] isEqual: @&quot;showPhotoViewer&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

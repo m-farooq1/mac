@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="3" maxValueString="100" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Course" inverseName="author" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="releaseDate" optional="YES" attributeType="Date" defaultDateTimeInterval="428587200" defaultValueString="2014-08-01" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" defaultValueString="TITLE" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="courses" inverseEntity="Author" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="-198" positionY="65" width="128" height="88"/>
+        <element name="Author" positionX="160" positionY="192" width="128" height="118"/>
+    </elements>
+</model>
